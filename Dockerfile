@@ -39,6 +39,10 @@ RUN \
     gulp-cli \
     yarn && \
 
+  # install heroku-toolbelt
+  curl https://toolbelt.heroku.com/install.sh | sh && \
+  ENV PATH $PATH:/usr/local/heroku/bin && \
+  
   # cleanup
   apt-get clean && \
   rm -rf \
