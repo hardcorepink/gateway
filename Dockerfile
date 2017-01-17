@@ -1,4 +1,4 @@
-# FROM ubuntu:xenial
+FROM ubuntu:xenial
 
 RUN \
   # configure the "jhipster" user
