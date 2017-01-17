@@ -23,6 +23,8 @@ RUN \
      python \
      g++ \
      sudo \
+     openssh-client \
+     ruby \
      build-essential && \
 
   # install node.js
@@ -61,3 +63,7 @@ RUN \
     /var/lib/apt/lists/* \
     /tmp/* \
     /var/tmp/*
+
+ENV \
+  
+  PATH $PATH:/usr/local/heroku/bin
